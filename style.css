@@ -78,9 +78,14 @@ video {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 20vw;
+    width: 60vw;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
 
 .form__group {
     position: relative;
@@ -184,7 +189,7 @@ video {
     background: rgb(72, 72, 72);
 
     border-radius: 50%;
-    animation: rotating 10s linear infinite;
+    animation: rotating 5s linear infinite;
     margin: 2%;
 }
 
@@ -196,7 +201,7 @@ video {
 }
 
 .inner-content {
-    font-size: 150%;
+    font-size: 180%;
     margin-top: 20vh;
 }
 
