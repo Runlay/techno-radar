@@ -69,15 +69,69 @@ video {
 }
 
 #animation {
+
     top: 50%;
     margin: 0 auto;
     position: absolute;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+
+    width: 20vw;
 }
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+}
+
+.form__field:focus {
+    /* .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #11998e;
+        font-weight: 700;
+    } */
+
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #386fef);
+    border-image-slice: 1;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+}
+
+
+
 
 .bar {
     height: 30px;
@@ -128,14 +182,16 @@ video {
     height: 70;
     width: 70;
     background: rgb(72, 72, 72);
+
     border-radius: 50%;
     animation: rotating 10s linear infinite;
+    margin: 2%;
 }
 
 #inner-circle {
     height: 10;
-    width: 70;
-    background: rgb(142, 63, 63);
+    width: 60;
+    background: linear-gradient(to right, #11998e, #386fef);
     margin: 30px;
 }
 
