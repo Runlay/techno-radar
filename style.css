@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Gentium+Plus&family=Syne+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+    /* Global Fade Effect */
+    transition: 0.5s;
+
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("/images/light.jpg"); */
+
+    background-color: rgba(0, 0, 0, 1);
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    filter: brightness(0.8);
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("/images/spotify.jpg");
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#start-sq {
+
+    height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    text-align: center;
+    position: absolute;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+#animation {
+    top: 50%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.bar {
+    height: 30px;
+    width: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+@keyframes audiomover {
+    0% {
+        height: 30px;
+    }
+
+    50% {
+        height: 100px;
+    }
+
+    100% {
+        height: 30px;
+    }
+}
+
+#bar1 {
+    animation: audiomover 1.2s infinite;
+}
+
+#bar2 {
+    animation: audiomover 1.8s infinite;
+}
+
+#bar3 {
+    animation: audiomover 1.6s infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+#circle {
+    height: 70;
+    width: 70;
+    background: rgb(72, 72, 72);
+    border-radius: 50%;
+    animation: rotating 10s linear infinite;
+}
+
+#inner-circle {
+    height: 10;
+    width: 70;
+    background: rgb(142, 63, 63);
+    margin: 30px;
+}
+
+.inner-content {
+    font-size: 150%;
+    margin-top: 20vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+}
+
+#logo {
+    text-decoration: wavy;
+
+}
+
+.nav {
+    text-decoration: none;
+    /* text-align: center; */
+    position: absolute;
+    top: 2%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    font-size: 2em;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+#input {
+    height: 40px;
+}
+
+.page-1 {
+    background-image: url("/images/bunker.jpg");
+    /* background: rgba(0, 0, 0, 0.7); */
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgba(0, 0, 0, 0.5); */
+
+}
+
+.page-2 {
+    height: 80vh;
+    background-color: rgb(17, 69, 117);
+    font-size: 36px;
+    color: white;
+
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    top: 70%;
+    /* height: 100vh; */
+}
+
+.item {
+    /* padding: 0.5em; */
+    /* border-radius: 20px; */
+
+    background-color: rgba(255, 255, 255, 0.30);
+    border: solid 2px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.inner-item {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: 70%;
+    transition: 0.5s;
+}
+
+.item:hover {
+    background-image: url("images/DSC_0658.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+    transition: 0.5s;
+}
+
+#music-box {
+    background-image: url("images/studio.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+}
+
+#clothing {
+    background-image: url("images/lifestyle.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+}
+
+#music-box {
+    background-image: url("images/studio.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+}
+
+#tour {
+    background-image: url("images/light.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+}
+
+
+.text {
+    background-color: white;
+    flex: 1;
+    padding: 5rem;
+    font-size: 1.2rem;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.push-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.push-left {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+[data-inviewport] {
+    /* THIS DEMO ONLY */
+    /* width: 100px;
+    height: 100px;
+    background: #0bf; */
+    /* padding-left: 30vw;*/
+    margin-left: 20vw;
+
+}
+
+/* inViewport */
+
+[data-inviewport="scale-in"] {
+    transition: 1s;
+    transform: translateX(-20vw);
+}
+
+[data-inviewport="scale-in"].is-inViewport {
+    transform: translateX(0);
+}
+
+#fade-in-text {
+    color: white;
+    padding-top: 50vh;
+    font-size: 40px;
+    /* width: 20vw; */
+
+}
