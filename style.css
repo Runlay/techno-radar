@@ -399,3 +399,9 @@ a {
     /* width: 20vw; */
 
 }
+
+#content {
+    display: hidden;
+    height: 120vh;
+    background-color: #11998e;
+}

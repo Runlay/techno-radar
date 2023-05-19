@@ -5,14 +5,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var video = document.getElementById("start-sq");
 
     // Get the button
-    var btn = document.getElementById("myBtn");
+    var search = document.getElementById("search");
 
     var text = document.getElementById("text")
 
-    // Pause and play the video, and change the button text
-    function startPlayer() {
+    search.addEventListener("click", getCity);
 
-
+    function getCity() {
+        var search_box_city = document.getElementById("city").value;
+        console.log("Searching for: " + search_box_city);
 
     }
 
